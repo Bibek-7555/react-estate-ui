@@ -1,6 +1,14 @@
 import './homePage.scss'
 import SearchBar from '../../components/SearchBar/searchBar'
+import { useContext } from 'react';
+import { AuthContext } from '../../context/AuthContext';
+
+
 function HomePage(){
+
+    // const {currentUser} = useContext(AuthContext)
+
+    // console.log(currentUser)
   return (
     <div className='homePage'> 
         <div className="textContainer">
@@ -15,17 +23,17 @@ function HomePage(){
                     <h1>16+</h1>
                     <h2>Years of Experience</h2>
                     </div>
-                <div className="box">
+                    <div className="box">       
                     <h1>200</h1>
                     <h2>Awards Gained</h2>
                     </div>
-                <div className="box">
+                    <div className="box">
                     <h1>1200+</h1>
                     <h2>Property Ready</h2>
-                </div>
-                </div>
-        </div>
-        </div>
+                    </div>
+                </div> 
+            </div> 
+        </div> 
         <div className="imgContainer">
             <img src="./bg.png" alt="" />
         </div>

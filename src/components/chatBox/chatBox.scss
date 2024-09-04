@@ -1,0 +1,77 @@
+.mainBox {
+    position: absolute;
+    top: 17%;
+    left: 30%;
+    z-index: 100000;
+    height: 100%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: azure;
+
+        .information{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            img{
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 10px;
+            }
+
+            span{
+                width: max-content;
+                height: fit-content;
+            }
+        }
+
+        button {
+            width: 10%;
+            height: 100%;
+        }
+    }
+
+    .chats {
+        background-color: aquamarine;
+        height: 300px;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+
+        .message {
+            background-color: grey;
+            padding: 2px;
+            margin: 5px;
+            width: fit-content;
+            border: 1px solid greenyellow;
+            border-radius: 5px;
+        }
+    }
+
+    .bottom {
+        form {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+
+            textarea {
+                width: 70%;
+                margin-right: 0;
+            }
+            button {
+                width: 30%;
+                margin-left: 0;
+            }
+        }
+    }
+}

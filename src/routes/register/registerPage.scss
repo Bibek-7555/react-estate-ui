@@ -1,0 +1,77 @@
+.registerPage {
+    height: 100%;
+    display: flex;
+    flex: 1;
+  
+    .formContainer {
+      flex: 3;
+      height: 100%;
+      display: flex;
+      //align-items: center;
+      justify-content: center;
+      margin-top: 5%;
+  
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border: none;
+        width: 70%;
+
+
+        h2{
+          margin-bottom: 20px;
+          border: none;
+        }
+  
+        input {
+          padding: 20px;
+          border: 1px solid gray;
+          border-radius: 5px;
+          width: 100%;
+        }
+  
+        button {
+          padding: 20px;
+          border-radius: 5px;
+          border: none;
+          background-color: teal;
+          color: white;
+          font-weight: bold;
+          cursor: pointer;
+  
+          &:disabled {
+            background-color: #bed9d8;
+            cursor: not-allowed;
+          }
+        }
+  
+        span {
+          color: rgba(255, 0, 0, 0.591);
+        }
+  
+        .link {
+          font-size: 14px;
+          color: rgb(77, 75, 75);
+          border-bottom: 1px solid gray;
+          width: max-content;
+
+          a{
+            color: red;
+          }
+        }
+      }
+    }
+  
+    .imgContainer {
+      flex: 2;
+      background-color: #fcf5f3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }

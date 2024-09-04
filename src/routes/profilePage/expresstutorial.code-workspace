@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../reactTutorial"
+		},
+		{
+			"path": "../../../.."
+		}
+	],
+	"settings": {
+		"tailwindCSS.emmetCompletions": true,
+		"liveServer.settings.multiRootWorkspaceName": "reactTutorial"
+	}
+}

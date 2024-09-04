@@ -54,12 +54,58 @@ nav{
             margin: 10px;
             border-radius: 10px;
         }
+
+        .user{
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+
+            img{
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 20px;
+            }
+
+            span{
+                @include sm {
+                    display: none;
+                }
+            }
+
+            .profile{
+                padding: 12px 24px;
+                background-color: #fece51;
+                cursor: pointer;
+                border: none;
+                border-radius: 0px;
+                position: relative;
+                z-index: 10;
+
+                .notification{
+                    position: absolute;
+                    top: -8px;
+                    right: -8px;
+                    background-color: red;
+                    color: white;
+                    border-radius: 50%;
+                    width: 26px;
+                    height: 26px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
         .register{
             height: fit-content;
             background-color: #13d252;
+            z-index: 54665;
         }
         .loginclass{
             transition: all 0.4s ease;
+            z-index: 3455454;
             &:hover{
                 background-color: aqua;
                 scale: 1.05;
@@ -88,7 +134,7 @@ nav{
                     top: 0;
                     right: -50%;
                     background-color: black;
-                    color: white;
+                    color: rgb(255, 255, 255);
                     height: 100vh;
                     width: 50%;
                     transition: all 1s ease;
