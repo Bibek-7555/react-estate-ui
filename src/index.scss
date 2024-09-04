@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit; //This is a CSS property declaration. The color property is being set to inherit.
+                    //This means that the text color of the element will be the same as its parent element.
+ }
+ body{
+    font-family: "Lato", sans-serif;
+    overflow: hidden;
+ }
